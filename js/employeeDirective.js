@@ -3,7 +3,7 @@ angular.module('directory.directives', [])
   .directive('employeeData', function () {
     return {
       scope: {
-        item: "=data" 
+        item: "=data"
       },
       restrict: 'AE',
       replace: false,

@@ -48,7 +48,7 @@ angular.module('directory.controllers', [])
   })
 
 /**
- * Controller to get the details of a particular employee
+ * Controller to get the direct reports of a particular employee
  */
   .controller('EmployeeReportsCtrl', function ($scope, $stateParams, EmployeeService) {
     EmployeeService.findByManager($stateParams.employeeId).then(function (employees) {
