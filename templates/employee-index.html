@@ -3,7 +3,7 @@
     <div class="bar bar-subheader item-input-inset">
         <label class="item-input-wrapper">
             <i class="icon ion-ios7-search placeholder-icon"></i>
-            <input id="searchKey" type="search" placeholder="Search" ng-model="searchKey" autocorrect="off" >
+            <input id="searchKey" type="search" placeholder="Search" ng-model="searchKey" autocorrect="off">
             <button class="button button-clear" ng-click="clearSearch()">X</button>
         </label>
         <button class="button button-clear" ng-click="search()">Search</button>
@@ -12,11 +12,11 @@
     <content has-header="true" has-subheader="true">
         <list>
             <item ng-repeat="employee in employees" type="item-text-wrap" href="#/employee/{{employee.id}}">
-                <h3>{{employee.firstName}} {{employee.lastName}}</h3>
-                <p>{{employee.title}}</p>
+
+                <!-- Custom Directive-->
+                <employee-data data="employee"></employee-data>
             </item>
             </item>
         </list>
     </content>
-
 </view>

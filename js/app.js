@@ -1,9 +1,10 @@
+
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'directory' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'directory.services' is found in services.js
 // 'directory.controllers' is found in controllers.js
-angular.module('directory', ['ionic', 'directory.services', 'directory.controllers'])
+angular.module('directory', ['ionic', 'directory.services', 'directory.controllers', 'directory.directives'])
 
 
     .config(function ($stateProvider, $urlRouterProvider) {
