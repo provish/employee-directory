@@ -12,5 +12,5 @@ Components:
 
 Features:
 1. Fully Responsive
-2. This prototype is fully expandable
+2. This prototype is fully scalable
 
